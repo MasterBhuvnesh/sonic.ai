@@ -26,4 +26,18 @@ Sonic AI - A scalable multimodal AI audio platform built with AWS & Inngest.
   </ul>
 </td>
   </tr>
+ <tr>
+    <td>
+      <img src="https://github.com/AryanDemi.png" width="40" height="40" style="border-radius:50%" />
+    </td>
+    <td><b>Aryan Bokde</b></td>
+    <td><code>AryanDemi</code></td>
+<td>
+  <ul>
+    <li>
+      <a href="https://github.com/AryanDemi" target="_blank">GitHub</a>
+    </li>
+  </ul>
+</td>
+  </tr>
 </table>
