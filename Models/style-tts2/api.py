@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 import uuid
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Header
+from fastapi.middleware.cors import CORSMiddleware
 import logging
 import os
 import re
@@ -81,6 +82,14 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="StyleTTS2 API",
               lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 TARGET_VOICES = {
     "andreas": "Models/LibriTTS/andreas1.wav",
